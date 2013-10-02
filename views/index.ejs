@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><%= title %></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Lint job specs">
+	<meta name="author" content="Guy Vider">
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="/javascripts/vendors/html5shiv.js"></script>
+		<script src="/javascripts/vendors/respond.min.js"></script>
+	<![endif]-->
+</head>
+	<body>
+		<div id="container">
+			<div class="page-header center">
+				<div class="row">
+					<div class="col-lg-offset-2 col-lg-10">
+						<h1><%= title %>&nbsp;<small>How good is that job offer?</small></h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-2 col-lg-10">
+					<form role="form" class="form-horizontal">
+						<div class="form-group">
+							<label for="spec" class="col-lg-2 control-label">Paste the job description:</label>
+							<div class="col-lg-6">
+								<textarea class="form-control" rows="10" name="spec"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-offset-7 col-lg-1">
+								<button class="btn btn-default  pull-right" id="submit">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div id="results">
+					<hr>
+					<div class="row">
+						<div class="col-lg-offset-2 col-lg-10">
+							<div class="col-lg-2">
+								<strong>Errors</strong>
+							</div>
+							<div class="col-lg-8">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-offset-2 col-lg-10">
+							<div class="col-lg-2">
+								<strong>Warnings</strong>
+							</div>
+							<div class="col-lg-8">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-offset-2 col-lg-10">
+							<div class="col-lg-2">
+								<strong>Notices</strong>
+							</div>
+							<div class="col-lg-8">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script data-main="/javascripts/main" src="/javascripts/vendors/require.js"></script>
+	</body>
+</html>
