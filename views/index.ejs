@@ -14,20 +14,90 @@
 	<![endif]-->
 </head>
 <body>
+	<!-- github ribbon -->
 	<a href="https://github.com/TravelingTechGuy/joblint"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+	<!-- /github ribbon -->
+
 	<div id="container">
-		<div class="page-header col-lg-offset-1 col-lg-8">
+		<!-- header -->
+		<div class="page-header col-lg-offset-2 col-lg-6">
 			<h1>
 				<%= title %>
 				<small>How good is that job offer?</small>
 			</h1>
 		</div>
+		<!-- /header -->
+		
+		<!-- form -->
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-6">
+			<div class="col-lg-offset-2 col-lg-6 well">
 				<form role="form">
 					<div class="form-group">
 						<label for="spec" class="control-label">Paste the job description:</label>
-						<textarea class="form-control" rows="10" name="spec"></textarea>
+						<textarea class="form-control" rows="10" name="spec">
+							Job Description
+
+Your work will involve:
+
+Converting PSDs into standards compliant HTML and CSS
+Performing front-end JavaScript and jQuery development
+Working closely with and incorporating feedback from stakeholders & project managers
+Creating mockups and wireframes of proposed designs and user stories
+Skills & Requirements
+
+You are:
+
+A motivated and creative Front-end Developer with experience in UX & UI who’s eager to be part of a young team and exciting ideas.  You will be our first full time HTML & CSS ninja (Front End Developer) with your key responsibility being to own anything front end design related. You will be part of the new product team and work closely with our creative team.
+
+What we need from you:
+
+Professional web design experience
+Extensive knowledge of HTML and CSS
+Strong command of jQuery and other JavaScript frameworks
+Intimate knowledge of cross-browser compatibility, web standards, and SEO best practices
+Comfortable with template languages
+Solid understanding of JSON, XML and interacting with public APIs
+Skills in Photoshop or similar design software
+Strong knowledge of usability and user experience (UX) design
+Good eye for layout, composition, and typography
+Always learning web new technologies and is active in the open source world
+Enjoys a fast pace, dynamic, challenging and team-oriented work environment
+Bonus points for:
+
+Some Ruby experience is a plus
+Experience with distributed version control (Git)
+Experience with HTML5 and CSS3
+Experience developing mobile-optimized web applications including responsive design
+Knowledge and experience in data visualization and infographic design
+Personal:
+
+Education: You must appear convincingly educated
+Self-motivated and ability to achieve deadlines and work independently
+Solid communication skills and team-working capability
+Eye for detail 
+Positive and logical approach together with willingness to learn
+Enthusiastic and fun to work with
+A desire to establish a young, fresh, social digital brand
+Agile approach to problem solving
+Takes responsibility to ensure successful results meet or exceed expectations
+Demonstrates a strong work ethic and committed to seeing tasks through to completion
+A track record of striving for continual personal and professional improvement
+We Offer:
+
+Competitive salary
+All the hardware and gadgets you need to be productive
+An awesome working environment in the heart of Silicon roundabout London 
+A young and international team 
+Great company events 
+Complimentary massages - "Massage Thursdays”
+Beer Pong Fridays
+Annual Christmas party trips abroad 
+And much more…
+
+Here's us - http://theinnovationenterprise.com
+
+and one of of 100 products - http://theinnovationenterprise.com/summits/digital-design-sanfran-2013
+						</textarea>
 					</div>
 					<div class="pull-right">
 						<button class="btn btn-primary" id="submit">Submit</button>
@@ -35,14 +105,17 @@
 				</form>
 			</div>
 		</div>
+		<!-- /form -->
+		
+		<!-- results -->
 		<div id="results" class="hide">
 			<div class="row">
-				<div class="col-lg-offset-1 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-6">
 					<hr>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-7">
 					<div class="col-lg-2">
 						<strong>Culture Issues</strong>
 					</div>
@@ -59,7 +132,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-7">
 					<div class="col-lg-2">
 						<strong>Realism Issues</strong>
 					</div>
@@ -76,7 +149,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-7">
 					<div class="col-lg-2">
 						<strong>Recruiter Issues</strong>
 					</div>
@@ -93,7 +166,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-7">
 					<div class="col-lg-2">
 						<strong>Tech Issues</strong>
 					</div>
@@ -110,7 +183,7 @@
 				</div>
 			</div>
 			<div class="row" data-bind="visible: errors().length > 0">
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-7">
 					<div class="col-lg-2">
 						<strong>Errors</strong>
 					</div>
@@ -125,11 +198,11 @@
 				</div>
 			</div>
 			<div class="row" data-bind="visible: warnings().length > 0">
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-7">
 					<div class="col-lg-2">
 						<strong>Warnings</strong>
 					</div>
-					<div class="col-lg-8  text-warning">
+					<div class="col-lg-8 text-warning">
 						<ul data-bind="foreach: warnings">
 							<li>
 								<span data-bind="text: message"></span><br>
@@ -140,7 +213,7 @@
 				</div>
 			</div>
 			<div class="row" data-bind="visible: notices().length > 0">
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-7">
 					<div class="col-lg-2">
 						<strong>Notices</strong>
 					</div>
@@ -155,17 +228,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-offset-1 col-lg-8">
-				<hr>
-			</div>
-		</div>
+		<!-- /results -->
+
+		<!-- footer -->
 		<div class="footer">
-			<div class="col-lg-offset-1 col-lg-8">
-				<h4>Developed by <a href="http://www.travelingtechguy.com" target="_blank">Traveling Tech Guy</a> <small>(using Rowan Manning's <a href="https://github.com/rowanmanning/joblint" target="_blank">JobLint module</a>)</small> &mdash; <a href="https://github.com/TravelingTechGuy/joblint" target="_blank">Fork this on Github</a></h4>
+			<div class="col-lg-offset-2 col-lg-6">
+				<hr>
+				<h4>
+					Built by <a href="http://www.travelingtechguy.com" target="_blank">Traveling Tech Guy</a>
+				</h4>
+				<small>
+					(using Rowan Manning's <a href="https://github.com/rowanmanning/joblint" target="_blank">JobLint module</a>) &mdash; <a href="https://github.com/TravelingTechGuy/joblint" target="_blank">Fork this on Github</a>
+				</small>
 			</div>
 		</div>
-	</div>
+		<!-- /footer -->
+	</div> <!-- /container -->
 	<script data-main="/javascripts/main" src="/javascripts/vendors/require.js"></script>
 </body>
 </html>
