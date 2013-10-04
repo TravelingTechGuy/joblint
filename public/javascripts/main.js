@@ -43,6 +43,10 @@ require(
 
         $(function() {
             $('#submit').on('click', submitForm);
+            $('#clear').on('click', function(e) {
+                e.preventDefault();
+                $('textarea').val('');
+            });
         });
     }
 );
