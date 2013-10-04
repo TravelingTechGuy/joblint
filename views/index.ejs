@@ -9,67 +9,162 @@
 	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-		<script src="/javascripts/vendors/html5shiv.js"></script>
-		<script src="/javascripts/vendors/respond.min.js"></script>
+	<script src="/javascripts/vendors/html5shiv.js"></script>
+	<script src="/javascripts/vendors/respond.min.js"></script>
 	<![endif]-->
 </head>
-	<body>
-		<div id="container">
-			<div class="page-header center">
-				<div class="row">
-					<div class="col-lg-offset-2 col-lg-10">
-						<h1><%= title %>&nbsp;<small>How good is that job offer?</small></h1>
+<body>
+	<div id="container">
+		<div class="page-header col-lg-offset-1 col-lg-8">
+			<h1>
+				<%= title %>
+				<small>How good is that job offer?</small>
+			</h1>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-6">
+				<form role="form">
+					<div class="form-group">
+						<label for="spec" class="control-label">Paste the job description:</label>
+						<textarea class="form-control" rows="10" name="spec"></textarea>
+					</div>
+					<div class="pull-right">
+						<button class="btn btn-primary" id="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="results" class="hide">
+			<div class="row">
+				<div class="col-lg-offset-1 col-lg-8">
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-2 col-lg-8">
+					<div class="col-lg-2">
+						<strong>Culture Issues</strong>
+					</div>
+					<div class="col-lg-3">
+						<div class="progress">
+							<div class="progress-bar" data-bind="{style: { width: culturePercent }, attr: { 'aria-valuenow': culturePercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+								<span class="sr-only" data-bind="text: culturePercent"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1">
+						(<span data-bind="text: culture"></span>)
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-10">
-					<form role="form" class="form-horizontal">
-						<div class="form-group">
-							<label for="spec" class="col-lg-2 control-label">Paste the job description:</label>
-							<div class="col-lg-6">
-								<textarea class="form-control" rows="10" name="spec"></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-lg-offset-7 col-lg-1">
-								<button class="btn btn-default  pull-right" id="submit">Submit</button>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div id="results">
-					<hr>
-					<div class="row">
-						<div class="col-lg-offset-2 col-lg-10">
-							<div class="col-lg-2">
-								<strong>Errors</strong>
-							</div>
-							<div class="col-lg-8">
+				<div class="col-lg-offset-2 col-lg-8">
+					<div class="col-lg-2">
+						<strong>Realism Issues</strong>
+					</div>
+					<div class="col-lg-3">
+						<div class="progress">
+							<div class="progress-bar" data-bind="{style: { width: realismPercent }, attr: { 'aria-valuenow': realismPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+								<span class="sr-only" data-bind="text: realismPercent"></span>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-offset-2 col-lg-10">
-							<div class="col-lg-2">
-								<strong>Warnings</strong>
-							</div>
-							<div class="col-lg-8">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-offset-2 col-lg-10">
-							<div class="col-lg-2">
-								<strong>Notices</strong>
-							</div>
-							<div class="col-lg-8">
-							</div>
-						</div>
+					<div class="col-lg-1">
+						(<span data-bind="text: realism"></span>)
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-lg-offset-2 col-lg-8">
+					<div class="col-lg-2">
+						<strong>Recruiter Issues</strong>
+					</div>
+					<div class="col-lg-3">
+						<div class="progress">
+							<div class="progress-bar" data-bind="{style: { width: recruiterPercent }, attr: { 'aria-valuenow': recruiterPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+								<span class="sr-only" data-bind="text: recruiterPercent"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1">
+						(<span data-bind="text: recruiter"></span>)
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-2 col-lg-8">
+					<div class="col-lg-2">
+						<strong>Tech Issues</strong>
+					</div>
+					<div class="col-lg-3">
+						<div class="progress">
+							<div class="progress-bar" data-bind="{style: { width: techPercent }, attr: { 'aria-valuenow': techPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+								<span class="sr-only" data-bind="text: techPercent"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1">
+						(<span data-bind="text: tech"></span>)
+					</div>
+				</div>
+			</div>
+			<div class="row" data-bind="visible: errors().length > 0">
+				<div class="col-lg-offset-2 col-lg-8">
+					<div class="col-lg-2">
+						<strong>Errors</strong>
+					</div>
+					<div class="col-lg-8 text-danger">
+						<ul data-bind="foreach: errors">
+							<li>
+								<span data-bind="text: message"></span><br>
+								<span data-bind="text: detail" class="text-muted"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row" data-bind="visible: warnings().length > 0">
+				<div class="col-lg-offset-2 col-lg-8">
+					<div class="col-lg-2">
+						<strong>Warnings</strong>
+					</div>
+					<div class="col-lg-8  text-warning">
+						<ul data-bind="foreach: warnings">
+							<li>
+								<span data-bind="text: message"></span><br>
+								<span data-bind="text: detail" class="text-muted"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row" data-bind="visible: notices().length > 0">
+				<div class="col-lg-offset-2 col-lg-8">
+					<div class="col-lg-2">
+						<strong>Notices</strong>
+					</div>
+					<div class="col-lg-8 text-info">
+						<ul data-bind="foreach: notices">
+							<li>
+								<span data-bind="text: message"></span><br>
+								<span data-bind="text: detail" class="text-muted"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-1 col-lg-8">
+					<hr>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="col-lg-offset-1 col-lg-8">
+					<h4>By <a href="http://www.travelingtechguy.com" target="_blank">Traveling Tech Guy</a> &copy;2013</h4>
+				</div>
+			</div>
 		</div>
-		<script data-main="/javascripts/main" src="/javascripts/vendors/require.js"></script>
-	</body>
+	</div>
+	<script data-main="/javascripts/main" src="/javascripts/vendors/require.js"></script>
+</body>
 </html>

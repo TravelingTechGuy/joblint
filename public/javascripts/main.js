@@ -23,29 +23,26 @@ require(
         'bootstrap'
     ],
     function($, ko, resultsVM) {
-        var vm;
+        var vm = new resultsVM;
         ko.applyBindings(vm);
 
         var submitForm = function(e) {
             e.preventDefault();
-            $('#results').hide();
             $.post('/lint', $('form').serialize())
                 .done(function(data) {
                     console.log(data);
-                    vm = new resultsVM(data);
+                    vm.populate(data);
                 })
                 .fail(function(jqXHR) {
                     console.error(jqXHR.responseText);
                 })
                 .always(function() {
-                    $('#results').show();
+                    $('#results').removeClass('hide');
                 });
         };
 
         $(function() {
             $('#submit').on('click', submitForm);
         });
-
-
     }
 );
