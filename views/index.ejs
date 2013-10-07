@@ -7,6 +7,12 @@
 	<meta name="description" content="Lint job specs">
 	<meta name="author" content="Guy Vider">
 	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+	<style>
+		body {
+			padding-top:70px; 
+			padding-bottom: 110px;
+		}
+	</style>
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="/javascripts/vendors/html5shiv.js"></script>
@@ -14,48 +20,41 @@
 	<![endif]-->
 </head>
 <body>
-	<!-- github ribbon -->
-	<a href="https://github.com/TravelingTechGuy/joblint"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
-	<!-- /github ribbon -->
-
-	<div id="container">
-		<!-- header -->
-		<div class="page-header col-lg-offset-2 col-lg-6">
-			<h1>
-				<%= title %>
-				<small>How good is that job offer?</small>
-			</h1>
+	<!-- navbar -->
+	<div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+	    	<a href = "#" class = "navbar-brand"><%= title %></a>
+	    	<p class="navbar-text">How good is that job offer?</p>
 		</div>
-		<!-- /header -->
-		
+	</div>
+	<!-- /navbar -->
+	<div id="container">
 		<!-- form -->
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-6 well">
+			<div class="col-lg-offset-2 col-lg-6">
 				<form role="form">
 					<div class="form-group">
 						<label for="spec" class="control-label">Paste the job description:</label>
 						<textarea class="form-control" rows="10" name="spec"></textarea>
 					</div>
-					<div class="pull-right">
-						<button class="btn btn-default" id="clearForm">Clear</button>
-						<button class="btn btn-primary" id="submitForm">Submit</button>
-					</div>
+					<span class="pull-right">
+						<button class="btn btn-sm btn-default" id="clearForm">Clear</button>
+						<button class="btn btn-sm btn-primary" id="submitForm">Submit</button>
+					</span>
 				</form>
 			</div>
 		</div>
 		<!-- /form -->
-		
+
 		<!-- results -->
 		<div id="results" class="hide">
 			<div class="row">
 				<div class="col-lg-offset-2 col-lg-6">
-					<hr>
-				</div>
+					<hr></div>
 			</div>
 			<div class="row">
 				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2">
-						<strong>Culture Issues</strong>
+					<div class="col-lg-2"> <strong>Culture Issues</strong>
 					</div>
 					<div class="col-lg-3">
 						<div class="progress">
@@ -71,8 +70,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2">
-						<strong>Realism Issues</strong>
+					<div class="col-lg-2"> <strong>Realism Issues</strong>
 					</div>
 					<div class="col-lg-3">
 						<div class="progress">
@@ -128,7 +126,8 @@
 					<div class="col-lg-8 text-danger">
 						<ul data-bind="foreach: errors">
 							<li>
-								<span data-bind="text: message"></span><br>
+								<span data-bind="text: message"></span>
+								<br>
 								<span data-bind="text: detail" class="text-muted"></span>
 							</li>
 						</ul>
@@ -143,7 +142,8 @@
 					<div class="col-lg-8 text-warning">
 						<ul data-bind="foreach: warnings">
 							<li>
-								<span data-bind="text: message"></span><br>
+								<span data-bind="text: message"></span>
+								<br>
 								<span data-bind="text: detail" class="text-muted"></span>
 							</li>
 						</ul>
@@ -158,7 +158,8 @@
 					<div class="col-lg-8 text-info">
 						<ul data-bind="foreach: notices">
 							<li>
-								<span data-bind="text: message"></span><br>
+								<span data-bind="text: message"></span>
+								<br>
 								<span data-bind="text: detail" class="text-muted"></span>
 							</li>
 						</ul>
@@ -167,22 +168,19 @@
 			</div>
 		</div>
 		<!-- /results -->
-
-		<!-- footer -->
-		<div class="footer">
-			<div class="col-lg-offset-2 col-lg-6">
-				<hr>
-				<h4>
-					Built by <a href="http://www.travelingtechguy.com" target="_blank">Traveling Tech Guy</a>
-					<small>
-						(using Rowan Manning's <a href="https://github.com/rowanmanning/joblint" target="_blank">JobLint module</a>)
-					</small>
-				</h4>
-				<a href="https://github.com/TravelingTechGuy/joblint" target="_blank">Fork this app on Github</a>
-			</div>
+	</div>
+	<!-- /container -->
+	<!-- footer -->
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="navbar-text">
+				Built by <a href="http://www.travelingtechguy.com" target="_blank" class="navbar-link">Traveling Tech Guy</a><br>
+				<a href="https://github.com/TravelingTechGuy/joblint" target="_blank" class="navbar-link">Fork this on GitHub</a><br>
+				<small class="text-muted"><a href="https://github.com/rowanmanning/joblint" target="_blank" class="navbar-link">(using Rowan Manning's JobLint module)</a></small>
+			</p>
 		</div>
-		<!-- /footer -->
-	</div> <!-- /container -->
+	</div>
+	<!-- /footer -->
 	<script data-main="/javascripts/main" src="/javascripts/vendors/require.js"></script>
 </body>
 </html>
