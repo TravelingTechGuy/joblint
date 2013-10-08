@@ -12,6 +12,10 @@
 			padding-top:70px; 
 			padding-bottom: 110px;
 		}
+		.row {
+			padding-left:50px; 
+			padding-right:50px
+		}
 	</style>
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -31,139 +35,107 @@
 	<div id="container">
 		<!-- form -->
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-6">
-				<form role="form">
-					<div class="form-group">
-						<label for="spec" class="control-label">Paste the job description:</label>
-						<textarea class="form-control" rows="10" name="spec"></textarea>
-					</div>
-					<span class="pull-right">
-						<button class="btn btn-sm btn-default" id="clearForm">Clear</button>
-						<button class="btn btn-sm btn-primary" id="submitForm">Submit</button>
-					</span>
-				</form>
-			</div>
+			<form role="form">
+				<div class="form-group">
+					<label for="spec" class="control-label">Paste the job description:</label>
+					<textarea class="form-control" rows="10" name="spec"></textarea>
+				</div>
+				<span class="pull-right">
+					<button class="btn btn-sm btn-default" id="clearForm">Clear</button>
+					<button class="btn btn-sm btn-primary" id="submitForm">Submit</button>
+				</span>
+			</form>
 		</div>
 		<!-- /form -->
 
 		<!-- results -->
 		<div id="results" class="hide">
+			<div class="row"><hr></div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-6">
-					<hr></div>
-			</div>
-			<div class="row">
-				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2"> <strong>Culture Issues</strong>
-					</div>
-					<div class="col-lg-3">
-						<div class="progress">
-							<div class="progress-bar" data-bind="{style: { width: culturePercent }, attr: { 'aria-valuenow': culturePercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-								<span class="sr-only" data-bind="text: culturePercent"></span>
-							</div>
+				<div class="col-lg-2">
+					<strong>Culture Issues</strong>
+				</div>
+				<div class="col-lg-2">
+					<div class="progress">
+						<div class="progress-bar" data-bind="{style: { width: culturePercent }, attr: { 'aria-valuenow': culturePercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+							<span data-bind="text: culture"></span>
 						</div>
-					</div>
-					<div class="col-lg-1">
-						(<span data-bind="text: culture"></span>)
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2"> <strong>Realism Issues</strong>
-					</div>
-					<div class="col-lg-3">
-						<div class="progress">
-							<div class="progress-bar" data-bind="{style: { width: realismPercent }, attr: { 'aria-valuenow': realismPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-								<span class="sr-only" data-bind="text: realismPercent"></span>
-							</div>
+				<div class="col-lg-2">
+					<strong>Realism Issues</strong>
+				</div>
+				<div class="col-lg-2">
+					<div class="progress">
+						<div class="progress-bar" data-bind="{style: { width: realismPercent }, attr: { 'aria-valuenow': realismPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+							<span data-bind="text: realism"></span>
 						</div>
-					</div>
-					<div class="col-lg-1">
-						(<span data-bind="text: realism"></span>)
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2">
-						<strong>Recruiter Issues</strong>
-					</div>
-					<div class="col-lg-3">
-						<div class="progress">
-							<div class="progress-bar" data-bind="{style: { width: recruiterPercent }, attr: { 'aria-valuenow': recruiterPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-								<span class="sr-only" data-bind="text: recruiterPercent"></span>
-							</div>
+				<div class="col-lg-2">
+					<strong>Recruiter Issues</strong>
+				</div>
+				<div class="col-lg-2">
+					<div class="progress">
+						<div class="progress-bar" data-bind="{style: { width: recruiterPercent }, attr: { 'aria-valuenow': recruiterPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+							<span data-bind="text: recruiter"></span>
 						</div>
-					</div>
-					<div class="col-lg-1">
-						(<span data-bind="text: recruiter"></span>)
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2">
-						<strong>Tech Issues</strong>
-					</div>
-					<div class="col-lg-3">
-						<div class="progress">
-							<div class="progress-bar" data-bind="{style: { width: techPercent }, attr: { 'aria-valuenow': techPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-								<span class="sr-only" data-bind="text: techPercent"></span>
-							</div>
+				<div class="col-lg-2">
+					<strong>Tech Issues</strong>
+				</div>
+				<div class="col-lg-2">
+					<div class="progress">
+						<div class="progress-bar" data-bind="{style: { width: techPercent }, attr: { 'aria-valuenow': techPercent }}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+							<span data-bind="text: tech"></span>
 						</div>
-					</div>
-					<div class="col-lg-1">
-						(<span data-bind="text: tech"></span>)
 					</div>
 				</div>
 			</div>
 			<div class="row" data-bind="visible: errors().length > 0">
-				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2">
-						<strong>Errors</strong>
-					</div>
-					<div class="col-lg-8 text-danger">
-						<ul data-bind="foreach: errors">
-							<li>
-								<span data-bind="text: message"></span>
-								<br>
-								<span data-bind="text: detail" class="text-muted"></span>
-							</li>
-						</ul>
-					</div>
+				<div class="col-lg-1">
+					<strong>Errors</strong>
+				</div>
+				<div class="col-lg-8 text-danger">
+					<ul data-bind="foreach: errors">
+						<li>
+							<span data-bind="text: message"></span><br>
+							<span data-bind="text: detail" class="text-muted"></span>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="row" data-bind="visible: warnings().length > 0">
-				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2">
-						<strong>Warnings</strong>
-					</div>
-					<div class="col-lg-8 text-warning">
-						<ul data-bind="foreach: warnings">
-							<li>
-								<span data-bind="text: message"></span>
-								<br>
-								<span data-bind="text: detail" class="text-muted"></span>
-							</li>
-						</ul>
-					</div>
+				<div class="col-lg-1">
+					<strong>Warnings</strong>
+				</div>
+				<div class="col-lg-8 text-warning">
+					<ul data-bind="foreach: warnings">
+						<li>
+							<span data-bind="text: message"></span><br>
+							<span data-bind="text: detail" class="text-muted"></span>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="row" data-bind="visible: notices().length > 0">
-				<div class="col-lg-offset-2 col-lg-7">
-					<div class="col-lg-2">
-						<strong>Notices</strong>
-					</div>
-					<div class="col-lg-8 text-info">
-						<ul data-bind="foreach: notices">
-							<li>
-								<span data-bind="text: message"></span>
-								<br>
-								<span data-bind="text: detail" class="text-muted"></span>
-							</li>
-						</ul>
-					</div>
+				<div class="col-lg-1">
+					<strong>Notices</strong>
+				</div>
+				<div class="col-lg-8 text-info">
+					<ul data-bind="foreach: notices">
+						<li>
+							<span data-bind="text: message"></span><br>
+							<span data-bind="text: detail" class="text-muted"></span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
