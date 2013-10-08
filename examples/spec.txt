@@ -1,0 +1,30 @@
+Senior Front End Engineer
+Engineering | Santa Clara, CA, United States 
+
+Chegg seeks a hands-on and hard-core senior engineer to create beautiful software on our front end engineering team. We're looking for curious and passionate engineers who enjoy learning about and implementing the latest front-end technologies. The ideal person is motivated by building cutting-edge work which will have an immediate impact on millions of students across the world.  If this excites you, then we look forward to hearing from you. Check out what Chegg engineers are thinking about these days here: http://techblog.chegg.com/ and take a look into our office and culture here: http://www.youtube.com/watch?v=YYHnkwiD7Oo. 
+ 
+Responsibilities:
+Develop awesome features for our high traffic web front end
+Code, test, document and deliver features with cross-browser compatibility, accessibility and search engine optimization
+Collaborate with product managers, designers, QA and other engineers to enhance existing UI
+Participate in agile development process, including scoping, detailed design, effort estimation, coding, testing, debugging, code reviews, maintenance and support
+Innovate and create the best user experience for millions of students
+ 
+Requirements:
+5+ years of consumer-facing web front end development experience
+Expertise in writing elegant and cross-browser HTML/CSS/JavaScript with an attention to detail, scalability, performance, and maintainability
+Proficient in DOM API and AJAX programming
+Familiar with JavaScript libraries, including Backbone and jQuery
+Front end debugging experience using tools like Firebug/Chrome dev tools
+Knowledge of latest open standards such as CSS3 and HTML5
+Strong problem solving, analytical and object-oriented programming skills
+Able to work in a fast-paced, creative and collaborative environment
+BS or MS in Computer Science or a related field
+ 
+Desirable:
+Agile development experience through scrum
+Web performance and scalability tuning
+Knowledge of LAMP architecture and PHP
+Knowledge of search engine optimization
+ 
+Chegg is an Equal Opportunity Employer

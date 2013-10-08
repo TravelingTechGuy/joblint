@@ -1,0 +1,99 @@
+Senior Consultant - Enterprise Search
+eSentio Technologies is a leading provider of technology consulting and implementation services to law firms and corporate legal departments. Our clients include some of the largest and most technically advanced law firms in the country. Our teams of consultants are industry leaders who are among the most experienced in their fields. This leadership is reflected in that our consultants are frequent speakers at industry conferences. In addition, they have written numerous articles and are regularly quoted in industry publications.
+
+eSentio is actively recruiting a Senior Consultant with Hands on consultant to advise and implement on enterprise search technologies to develop scalable practice-wide solutions for Amlaw 200 Firms.
+
+hands on consultant to advise and implement on enterprise search technologies to develop scalable practice-wide solutions for Amlaw 200 Firms.
+
+Job Description
+
+Key responsibilities include:
+
+· Promote knowledge sharing through an organization's operational business processes and systems by, among others, strengthening links between knowledge sharing and the information systems, and improving integration among information systems in the organization, to facilitate seamless exchange of information across systems;
+
+· Share experiences across communities, Practice Groups, business units, and networks on innovative approaches in knowledge sharing, including preparation of case studies;
+
+· Help monitor and evaluate the knowledge sharing program, including external benchmarking and evaluation programs/opportunities;
+
+· Help disseminate information about the organization's knowledge sharing program to internal and external audiences, including organizing knowledge sharing events (such as ILTA Events, Sponsored KM Seminars, Client site visits, interviews), maintaining communications on knowledge sharing across the organization, participation in orientation and training sessions, and preparation of brochures/presentations.
+
+· Define, document and implement best practices for the Enterprise Search
+
+· Maintain and develop vendor relationships (Autonomy, Recommind & Microsoft) specific to the Enterprise Search Practice area.
+
+· Maintain current and ongoing knowledge and certifications with appropriate training opportunities.
+
+· Mentor and coach members of the team within the Enterprise Search group on individual projects and best practices.
+
+· Maintain a high level of subject matter and technical expertise as well as industry trends and knowledge with appropriate training and professional development plans.
+
+· Present at trade shows and CIO Roundtable, author articles and white papers for industry trade publications.
+
+Job Requirements
+
+The skills and experience an enterprise search engineer candidate should have to work on enterprise search implementations include the following:
+
+· Security Integration: Experience with document security and how security relates to indexing documents. Experience integrating security models from different products;
+
+· Web development skills are necessary for Enterprise Search web application front end customization.
+
+· Experience administering previous search indexers and indexing large numbers of documents;
+
+· Experience with search related customer support issues is important. The person should be able to work with end-users to collect reported problems, and diagnose them. Experience with search issues involving stop words, special characters like hypens and numerics would be a plus;
+
+· Experience administering Document Management Systems.
+
+· Experience in the analysis, design, implementation, administration;
+
+· NET Framework
+
+· Java Script
+
+· QA & Testing procedures
+
+· ASP.NET
+
+· C#, Visual Basic .NET
+
+· Microsoft SQL
+
+· XML
+
+· SharePoint 2007 / 2010
+
+· 3+ years of .NET development experience on .NET 2.0 or higher. (C# or C++ preferred)
+
+· Consulting experience required;
+
+· Law Firm experience required.
+
+Candidate Qualifications
+
+Candidates must possess the following:
+
+· Uncompromising honesty and integrity
+
+· Exceptional attitude and work ethic
+
+· Professional image, personality and demeanor
+
+· Effective verbal and written communication skills
+
+· Meticulous organizational and multi-tasking skills
+
+· Commitment to excellent customer service
+
+· Good listening skills
+
+· Proven desire and ability to complete tasks and meet deadlines to the best of his/her ability
+
+· Verifiable pride in work, company and team
+
+· Relentless energy and enthusiasm
+
+· Ability to work well with others and follow instructions
+
+· Willingness to travel up to 50%
+
+Location:
+Can be anywhere in the US as long as you are near a major airport .  Local and out of town travel is required
