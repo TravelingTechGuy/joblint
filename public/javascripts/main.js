@@ -31,13 +31,22 @@ require(
 			$.post('/lint', $('form').serialize())
 				.done(function(data) {
 					console.log(data);
-					vm.populate(data);
+					if(data.clean) {
+						$('#messageText').addClass('text-info').text('Congratulations! No issues found with job spec!');
+						$('#message').removeClass('hide');
+					}
+					else {
+						vm.populate(data);
+						$('#results').removeClass('hide');
+					}
 				})
 				.fail(function(jqXHR) {
 					console.error(jqXHR.responseText);
+					$('#messageText').addClass('text-error').text('An error has occured while analyzing spec');
+					$('#message').removeClass('hide');
 				})
 				.always(function() {
-					$('#results').removeClass('hide');
+					
 				});
 		};
 
@@ -45,6 +54,8 @@ require(
 			e.preventDefault();
 			$('textarea').val('');
 			$('#results').addClass('hide');
+			$('#message').addClass('hide');
+			$('#messageText').removeClass().text();
 		};
 
 		$(function() {
