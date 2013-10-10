@@ -1,0 +1,31 @@
+Job description
+Skills Required: Front-end Software Development, Large-scale Web Applications, JavaScript, AJAX, HTML, CSS, Full-stack Web Software Development.
+Job Description:
+
+Company is looking for a Senior Front-End Software Developer. Are you the one?
+We build the leading SaaS platform for gamifying and measuring behavior across the web, mobile, and applications, serving tens of millions of requests per day. If you’re a smart, motivated developer with 4 - 6 years of proven, hands-on experience with the front end of large-scale web applications, you might just be the key person we’re looking for. Our driven, highly talented development team builds the front-end infrastructure and related tools for our hosted platform, and we’re growing. Fast. We need someone who’s passionate about delivering first-class products and who wants to have a significant role in and impact on our success.
+Why would you want to be our Senior Front-End Software Developer?
+We sit right at the spot where websites, mobile apps & enterprise SaaS smack full-speed into big data analytics. Gamification is the big idea of 2013 and it’s only getting bigger. You’ll be surrounded by the speed and flexibility of a start-up team while working on projects that support some of the world’s biggest companies. Do you love brand-new offices featuring overstocked kitchens, games & outings, bike & jogging paths, unbeatable views and ridiculous gyms with climbing walls? Sure — we’ve got all of those. But you want all of that while you get to work with state-of-the-art technologies in one of the hottest emerging markets around. You want to be in a position where what you do directly affects company performance every day.
+ 
+ 
+Responsibilities:
+You will collaborate to help specify, design, and develop software meeting company and product requirements, with lead responsibility for different areas of the architecture. You’ll also be responsible for communicating with senior leadership around these areas and projects.
+ 
+ 
+Required Skills:
+4 - 6 years of proven, hands-on success in the front-end of large-scale web applications
+At least 6 years experience in programming in JavaScript, HTML and CSS
+At least 2 years experience with AJAX-based web applications
+Ability to provide concrete examples of user interfaces where you led design and development
+Ability to articulate the reasoning behind choices in the design and discuss alternatives
+Knowledge of full-stack web development
+Demonstrable experience taking significant projects all the way from spec to release
+Desired Skills and Experience
+Benefits/Perks:
+Competitive Salary
+Stock Options
+Full medical, dental & vision benefits
+Brand-new office space bursting with tasty treats, games, and jogging/bike paths
+Fully paid gym membership (for code-crushing forearms)
+Company-provided CalTrain pass
+Lots of fun team events & outings

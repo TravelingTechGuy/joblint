@@ -42,7 +42,7 @@ require(
 				})
 				.fail(function(jqXHR) {
 					console.error(jqXHR.responseText);
-					$('#messageText').addClass('text-error').text('An error has occured while analyzing spec');
+					$('#messageText').addClass('text-danger').text('An error has occured while analyzing spec');
 					$('#message').removeClass('hide');
 				})
 				.always(function() {
