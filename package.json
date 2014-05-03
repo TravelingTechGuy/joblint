@@ -1,6 +1,6 @@
 {
   "name": "JobLint",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "private": false,
   "description": "Find out common error and issues in job descriptions",
   "homepage": "https://github.com/TravelingTechGuy/joblint",
@@ -25,9 +25,10 @@
   "scripts": {
     "start": "node app.js"
   },
+  "main": "app.js" ,
   "dependencies": {
-    "express": "*",
-    "ejs": "*",
-    "joblint": "*"
+    "express": "~3",
+    "ejs": "latest",
+    "joblint": "latest"
   }
 }
